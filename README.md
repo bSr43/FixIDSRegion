@@ -16,5 +16,5 @@ The program takes two parameters:
 - The phone number template in international format. The format contains the international country prefix, and as many `0` as needed to form a valid number.
 
 ```
-./FixIDSRegion R:FR +330000000000 && killall identityservicesd && killall imagent
+./FixIDSRegion R:FR +330000000000
 ```

@@ -12,10 +12,18 @@
 int main(int argc, const char *argv[]) {
     @autoreleasepool {
         if (argc != 3) {
-            fprintf(stderr, "Usage: FixIDSRegion country phone_pattern\n");
+            const char *last = (const char *) strrchr(argv[0], '/');
+            if (last) {
+                last++;
+            }
+            else {
+                last = argv[0];
+            }
+            fprintf(stderr, "Usage: %s country phone_pattern\n", last);
             fprintf(stderr, "Examples:\n");
-            fprintf(stderr, "   FixIDSRegion R:US +10000000000\n");
-            fprintf(stderr, "   FixIDSRegion R:FR +330000000000\n");
+            fprintf(stderr, "   USA:    %s R:US +10000000000\n", last);
+            fprintf(stderr, "   France: %s R:FR +330000000000\n", last);
+            fprintf(stderr, "   Italy:  %s R:IT +390000000000\n", last);
             exit(1);
         }
 
@@ -90,6 +98,9 @@ int main(int argc, const char *argv[]) {
             }
         }
     }
+
+    system("killall identityservicesd");
+    system("killall imagent");
 
     puts("Done");
 

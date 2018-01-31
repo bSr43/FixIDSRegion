@@ -27,6 +27,7 @@
 		07842B5F201A212300450C5A /* FixIDSRegion */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FixIDSRegion; sourceTree = BUILT_PRODUCTS_DIR; };
 		07842B62201A212300450C5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07842B6A201A219600450C5A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		079D3BD92021E2DD00E0199A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		07842B56201A212300450C5A = {
 			isa = PBXGroup;
 			children = (
+				079D3BD92021E2DD00E0199A /* README.md */,
 				07842B61201A212300450C5A /* FixIDSRegion */,
 				07842B60201A212300450C5A /* Products */,
 				07842B69201A219600450C5A /* Frameworks */,
