@@ -12,10 +12,10 @@
 int main(int argc, const char *argv[]) {
     @autoreleasepool {
         if (argc != 3) {
-            fprintf(stderr, "Usage: FixIDRegion country phone_pattern\n");
+            fprintf(stderr, "Usage: FixIDSRegion country phone_pattern\n");
             fprintf(stderr, "Examples:\n");
-            fprintf(stderr, "   FixIDRegion R:US +10000000000\n");
-            fprintf(stderr, "   FixIDRegion R:FR +330000000000\n");
+            fprintf(stderr, "   FixIDSRegion R:US +10000000000\n");
+            fprintf(stderr, "   FixIDSRegion R:FR +330000000000\n");
             exit(1);
         }
 
